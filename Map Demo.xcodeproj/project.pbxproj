@@ -13,6 +13,7 @@
 		4A07123C1AD116C500B12186 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A07123B1AD116C500B12186 /* Images.xcassets */; };
 		4A07123F1AD116C600B12186 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A07123D1AD116C600B12186 /* LaunchScreen.xib */; };
 		4A07124B1AD116C600B12186 /* Map_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A07124A1AD116C600B12186 /* Map_DemoTests.swift */; };
+		4AFCB9121AD8D62A008F332F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFCB9111AD8D62A008F332F /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4A0712441AD116C600B12186 /* Map DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Map DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0712491AD116C600B12186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A07124A1AD116C600B12186 /* Map_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_DemoTests.swift; sourceTree = "<group>"; };
+		4AFCB9111AD8D62A008F332F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AFCB9121AD8D62A008F332F /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		4A0712261AD116C500B12186 = {
 			isa = PBXGroup;
 			children = (
+				4AFCB9111AD8D62A008F332F /* CoreLocation.framework */,
 				4A0712311AD116C500B12186 /* Map Demo */,
 				4A0712471AD116C600B12186 /* Map DemoTests */,
 				4A0712301AD116C500B12186 /* Products */,
@@ -405,6 +409,7 @@
 				4A0712501AD116C600B12186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A0712511AD116C600B12186 /* Build configuration list for PBXNativeTarget "Map DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				4A0712531AD116C600B12186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
