@@ -31,6 +31,40 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
         map.setRegion(region, animated: true)
+        
+        var annotation = MKPointAnnotation()
+        
+        annotation.coordinate = location
+        
+        annotation.title = "Seattle Dowtown"
+        
+        annotation.subtitle = "I come here all the time"
+        
+        map.addAnnotation(annotation)
+        
+        var uilpgr = UILongPressGestureRecognizer(target: self, action: "action:")
+        
+        uilpgr.minimumPressDuration = 2
+        
+        map.addGestureRecognizer(uilpgr)
+    }
+    
+    func action(gestureRecognizer: UIGestureRecognizer) {
+        println("Gesture Recognized")
+        
+        var touchPoint = gestureRecognizer.locationInView(self.map)
+        
+        var newCoordinate: CLLocationCoordinate2D = map.convertPoint(touchPoint, toCoordinateFromView: self.map)
+        
+        var annotation = MKPointAnnotation()
+        
+        annotation.coordinate = newCoordinate
+        
+        annotation.title = "New Place"
+        
+        annotation.subtitle = "I come here all the time"
+        
+        map.addAnnotation(annotation)
     }
 
     override func didReceiveMemoryWarning() {
